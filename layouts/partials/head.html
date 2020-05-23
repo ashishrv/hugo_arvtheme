@@ -1,3 +1,11 @@
 <head>
-    <title>{{ .Title }}</title>
+    <!-- defining the character set as UTF-8 -->
+    <meta charset="utf-8">
+    <!-- To support responsive pages on mobiles define the viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <!-- See https://gohugo.io/templates/internal/ -->
+
 </head>
