@@ -1,17 +1,15 @@
 <head>
-    <!-- defining the character set as UTF-8 -->
-    <meta charset="utf-8">
-    <!-- To support responsive pages on mobiles define the viewport meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
-    <link rel="canonical" href="{{ .Permalink }}" />
-    <!-- See https://gohugo.io/templates/internal/ -->
-    <!-- social sharing-->
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
-    <!-- global css scripts-->
-    <link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}">
-    <link rel="stylesheet" href="{{ absURL "css/all.css" }}">
-    <link rel="stylesheet" href="{{ absURL "css/jquery.min.css" }}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+<link rel="canonical" href="{{ .Permalink }}" />
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ if and .Site.GoogleAnalytics  (not (in (string .Site.BaseURL) "localhost")) }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+<link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ "css/arv.css" | relURL }}" />
+<link rel="stylesheet" href="{{ absURL "js/jquery.min.js" }}">
 </head>
