@@ -7,5 +7,7 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- See https://gohugo.io/templates/internal/ -->
-
+    <link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}">
+    <link rel="stylesheet" href="{{ absURL "css/all.css" }}">
+    <link rel="stylesheet" href="{{ absURL "css/jquery.min.css" }}">
 </head>
