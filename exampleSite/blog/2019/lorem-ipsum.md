@@ -5,6 +5,9 @@ description: "This is a short description of the page"
 draft: true
 images:
   - /images//blog/2019/li0iC0rjvvg-unsplash.jpg
+categories:
+  - Web development
+  - Blogging
 ---
 
 # What is Lorem Ipsum?
