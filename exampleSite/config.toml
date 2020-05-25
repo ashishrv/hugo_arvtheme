@@ -12,6 +12,16 @@ paginate = 4
     showrelatedcontent = true
     showcardlimit = 6
 
+
+    google_fonts = [
+        ["Fira Code", "400, 700"],
+        ["Prompt", "200, 200i"]
+    ]
+
+    heading_font = "Fira Code"
+    poetry_font = "Prompt"
+
+
 [[menu.main]]
   name = "About"
   url = "/about"

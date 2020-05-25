@@ -12,4 +12,18 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "css/arv.css" | relURL }}" />
 <link rel="stylesheet" href="{{ absURL "js/jquery.min.js" }}">
+{{ if .Site.Params.google_fonts }}
+{{ $fonts := slice }}
+{{ range .Site.Params.google_fonts }}
+{{ $family := replace (index (.)  0) " " "+" }}
+{{ $weights := replace (index (.) 1) " " "" }}
+{{ $string := print $family ":" $weights }}
+{{ $fonts = $fonts | append $string }}
+{{ end }}
+{{ $url_part := (delimit $fonts "|") | safeHTMLAttr }}
+<link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
+{{ else}}
+<!-- specify a default in case custom config not present -->
+<link href="//fonts.googleapis.com/css?family=Prompt:200,200i,300" rel="stylesheet">
+{{ end }}
 </head>
