@@ -35,6 +35,11 @@ paginate = 4
     url = "https://twitter.com/arvidyarthi"
     pre = "<i class='fab fa-twitter'></i>"
 
+[[menu.social]]
+    name = "Stackoverflow"
+    url = "https://stackoverflow.com/users/432745/pyfunc"
+    pre = "<i class='fab fa-stack-overflow'></i>"
+
 
 [[menu.footer]]
   name = "About"
