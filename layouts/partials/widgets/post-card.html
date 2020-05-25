@@ -12,8 +12,20 @@
     <div class="card-content">
         <a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a>
         <span class="heading">{{ .Site.Params.Author }} | <time>{{ .PublishDate.Format "January 2, 2006"}}</time></span>
+        <span class="heading">
+        {{ range .Params.categories }}
+        <a  href="/categories/{{ . | urlize}}">{{ . }}</a>.
+        {{ end }}
+        </span>
         <div class="content">
             {{ .Summary }}
         </div>
     </div>
+    <!--
+    <div class="tags is-pulled-right">
+        {{ range .Params.categories }}
+        <a class="tag is-primary is-radiusless" href="/categories/{{ . | urlize}}">{{ . }}</a>
+        {{ end }}
+    </div>
+    -->
 </div>
