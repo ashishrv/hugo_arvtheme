@@ -6,7 +6,7 @@
             {{ .Content }}
         </div>
         <div class="columns is-multiline">
-            {{ range .Pages }}
+            {{ range first .Site.Params.showcardlimit .Pages.ByPublishDate.Reverse }}
             <div class="column is-half">
                 {{ partial "widgets/post-card.html" . }}
             </div>
