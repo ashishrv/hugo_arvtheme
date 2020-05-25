@@ -8,14 +8,15 @@ Series: []
 heroimage: /images/heroimage.jpg
 herotext: Testing out hugo
 ---
+
 <style>
 .main-image {
     background-position: center;
     background-size: cover;
-    background-image: url(/images/kyle-sung-MePPRJdnnpc-unsplash.jpg);
+    background-image: url(/images/artem-sapegin-b18TRXc8UPQ-unsplash.jpg);
 }
 </style>
-<section class="hero is-large is-light main-image">
+<section class="hero is-halfheight is-light main-image">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h2 class="title is-1">Func(Test, Deploy)</h2>
