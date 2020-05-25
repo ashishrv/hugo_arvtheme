@@ -6,12 +6,13 @@
             {{ .Content }}
         </div>
         <div class="columns is-multiline">
-            {{ range first .Site.Params.showcardlimit .Pages.ByPublishDate.Reverse }}
+            {{ range .Paginator.Pages.ByPublishDate.Reverse }}
             <div class="column is-half">
                 {{ partial "widgets/post-card.html" . }}
             </div>
             {{ end }}
         </div>
+        {{ template "_internal/pagination.html" . }}
     </div>
 </div>
 {{ end }}
