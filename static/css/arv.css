@@ -32,3 +32,7 @@ main {
     display: table;
     padding: 0.1em;
 }
+
+.card {
+    height: 100%;
+}
