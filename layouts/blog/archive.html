@@ -12,7 +12,7 @@
             {{/* $paginators */}}
 
             <h1>{{ .Title }}</h1>
-            {{ $related := (where (where (.Site.RegularPages) "Type" "blog") ".Title" "!=" $title) }}
+            {{ $related := (where (where (.Site.RegularPages) "Type" "blog") ".Params.hidden" "ne" "true") }}
             {{ range $related.GroupByDate "2006" }}
             <h3>{{ .Key }}</h3>
             {{ range .Pages }}

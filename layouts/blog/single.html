@@ -67,13 +67,11 @@
                 <h2>Related content</h2>
             </div>
             <div class="columns">
-                {{ $related := (where (where (.Site.RegularPages.Related .) "Type" "blog") .Title "!=" "Archive") | first 3 }}
+                {{ $related := (where (where (.Site.RegularPages.Related .) "Type" "blog") ".Params.hidden" "ne" "true") | first 3 }}
                 {{ range $related }}
-                {{ if  ne .Title "Archive" }}
                 <div class="column is-one-third">
                     {{ partial "widgets/post-card-small.html" . }}
                 </div>
-                {{ end }}
                 {{ end }}
             </div>
         </div>
