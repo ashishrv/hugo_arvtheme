@@ -4,6 +4,7 @@ title = "PiFunc"
 theme = "arvtheme"
 paginate = 4
 debug = 100000
+enableEmoji = true
 
 [params]
     author = "Ashish R Vidyarthi"
