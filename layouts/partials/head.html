@@ -18,6 +18,13 @@
 {{ partial "externaljs/math.html" . }}
 {{ end }}
 
+<!-- layouts/partial/externaljs/mermaid.html -->
+{{ if or .Params.mermaid .Site.Params.mermaid }}
+{{ partial "externaljs/mermaid.html" . }}
+{{ end }}
+
+
+
 {{ if .Site.Params.google_fonts }}
 {{ $fonts := slice }}
 {{ range .Site.Params.google_fonts }}
