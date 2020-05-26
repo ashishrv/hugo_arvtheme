@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="container">
+    <div class="section">
+        <div class="content">
+
+            {{ $type := .Type }}
+            {{ $title := .Title }}
+
+            {{/* TODO: Following pagination does not work */}}
+            {{/* $pages := where site.RegularPages "Type" "in" site.Params.mainSections */}}
+            {{/* $paginators := .Paginate (where .Site.RegularPages "Type" .Type) */}}
+            {{/* $paginators */}}
+
+            <h1>{{ .Title }}</h1>
+            {{ $related := (where (where (.Site.RegularPages) "Type" "blog") ".Title" "!=" $title) }}
+            {{ range $related.GroupByDate "2006" }}
+            <h3>{{ .Key }}</h3>
+            {{ range .Pages }}
+            <div class="archive-post">
+                <span class="archive-post-time">
+                    {{ .Date.Format (.Site.Params.dateFormatToUse | default "01/02") }}
+                </span>
+                <span class="archive-post-title">
+                    <a href="{{ .RelPermalink }}" class="archive-post-link">
+                        {{ .Title }}
+                    </a>
+                </span>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

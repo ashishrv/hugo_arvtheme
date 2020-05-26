@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "PiFunc"
 theme = "arvtheme"
 paginate = 4
+debug = 100000
 
 [params]
     author = "Ashish R Vidyarthi"
@@ -11,6 +12,7 @@ paginate = 4
     showrelatedcardimage = false
     showrelatedcontent = true
     showcardlimit = 6
+    mainSections = ["blog", "docs"]
 
 
     google_fonts = [
@@ -24,15 +26,30 @@ paginate = 4
 
 [[menu.main]]
   name = "About"
+  weight = 10
   url = "/about"
 
 [[menu.main]]
   name = "Blog"
+  weight = 20
   url = "/blog"
 
 [[menu.main]]
     name = "Categories"
+    weight = 30
     url = "/categories"
+
+[[menu.main]]
+    name = "Archive"
+    weight = 40
+    identifier = "archives"
+    url = "/blog/archive"
+
+[[menu.main]]
+   name = "Series"
+   weight = 50
+   identifier = "series"
+   url = "/series/"
 
 [[menu.social]]
     name = "GitHub"
