@@ -12,6 +12,12 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "css/arv.css" | relURL }}" />
 <link rel="stylesheet" href="{{ absURL "js/jquery.min.js" }}">
+
+<!-- layouts/partial/externaljs/math.html -->
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "externaljs/math.html" . }}
+{{ end }}
+
 {{ if .Site.Params.google_fonts }}
 {{ $fonts := slice }}
 {{ range .Site.Params.google_fonts }}

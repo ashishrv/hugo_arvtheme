@@ -2,6 +2,7 @@
 title: "Math support"
 date: 2020-05-25T20:43:55-07:00
 draft: true
+math: true
 Description: ""
 Tags: []
 Categories: []
