@@ -73,6 +73,11 @@ debug = 100000
     url = "https://stackoverflow.com/users/432745/pyfunc"
     pre = "<i class='fab fa-stack-overflow'></i>"
 
+[[menu.social]]
+    name = "RSS"
+    url = "/index.xml"
+    pre = "<i class='fa fa-rss'></i>"
+    weight = 10
 
 [[menu.footer]]
   name = "About"
