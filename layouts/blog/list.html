@@ -7,9 +7,11 @@
         </div>
         <div class="columns is-multiline">
             {{ range .Paginator.Pages.ByPublishDate.Reverse }}
+            {{ if  ne .Title "Archive" }}
             <div class="column is-half">
                 {{ partial "widgets/post-card.html" . }}
             </div>
+            {{ end }}
             {{ end }}
         </div>
         {{ template "_internal/pagination.html" . }}
