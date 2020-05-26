@@ -51,6 +51,12 @@ debug = 100000
    identifier = "series"
    url = "/series/"
 
+[[menu.main]]
+   name = "Tags"
+   weight = 50
+   identifier = "tags"
+   url = "/tags/"
+
 [[menu.social]]
     name = "GitHub"
     url = "https://github.com/ashishrv"
@@ -90,3 +96,9 @@ debug = 100000
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
+[taxonomies]
+
+category = "categories"
+tag = "tags"
+series = "series"
