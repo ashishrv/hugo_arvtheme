@@ -5,5 +5,5 @@ draft: true
 Description: ""
 Tags: []
 Categories: ["markdown", "code"]
-Series: ["test"]
+Series: []
 ---

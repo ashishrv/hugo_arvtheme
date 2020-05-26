@@ -1,11 +1,11 @@
 ---
-title: "Test Markdown"
+title: "Markdown span elements"
 date: 2020-05-24T16:03:19-07:00
 draft: true
 Description: ""
 Tags: []
 Categories: ["markdown", "basic"]
-Series: []
+Series: ["test-markdown-rendering"]
 ---
 
 *   [Overview](#overview)
