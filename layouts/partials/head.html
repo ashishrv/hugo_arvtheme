@@ -8,7 +8,8 @@
 {{ if and .Site.GoogleAnalytics  (not (in (string .Site.BaseURL) "localhost")) }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
-<link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}">
+<!-- <link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}"> -->
+<link rel="stylesheet" href="{{ absURL "css/arvstyles.css" }}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "css/arv.css" | relURL }}" />
 <link rel="stylesheet" href="{{ absURL "js/jquery.min.js" }}">
@@ -23,6 +24,10 @@
 {{ partial "externaljs/mermaid.html" . }}
 {{ end }}
 
+<!-- layouts/partial/externaljs/jssequence.html -->
+{{ if or .Params.jssequence .Site.Params.jssequence }}
+{{ partial "externaljs/jssequence.html" . }}
+{{ end }}
 
 
 {{ if .Site.Params.google_fonts }}

@@ -33,7 +33,3 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 {{< /section >}}
 
 {{< blogposts count=3 >}}
-
-{{< section >}}
-{{< youtube vsMydMDi3rI >}}
-{{< /section >}}

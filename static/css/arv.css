@@ -1,5 +1,6 @@
 .logo h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-family: 'Redressed', cursive;
     font-size: 1.5em;
 }
 
@@ -42,6 +43,21 @@ main {
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.5;
-    font-family: Prompt, sans-serif;
+    /*font-family: 'Redressed', cursive; */
     text-align: center;
+}
+
+
+/* Further customization of Bulma CSS */
+
+.title {
+font-family: 'Literata', serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+font-family: 'Literata', serif;
+}
+
+code {
+font-family: 'DM Mono', monospace;
 }

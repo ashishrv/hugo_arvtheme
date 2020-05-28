@@ -11,3 +11,8 @@ Series: []
 Testing some hugo shortcodes
 
 <!--more-->
+
+
+{{< section >}}
+{{< youtube vsMydMDi3rI >}}
+{{< /section >}}
