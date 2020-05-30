@@ -6,8 +6,8 @@ Tags: []
 Categories: []
 Series: []
 layout: about
-heroimage: /images/artem-sapegin-b18TRXc8UPQ-unsplash.jpg
-herotext: Testing out hugo
+#heroimage: /images/artem-sapegin-b18TRXc8UPQ-unsplash.jpg
+#herotext: Testing out hugo
 ---
 
 ## Some notes

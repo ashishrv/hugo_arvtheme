@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+{{ if .Params.heroimage }}
 <div class="hero is-light is-halfheight" {{ with .Params.heroimage }}
     style="background: url({{ . }}) center top; background-size:cover;" {{ end }}>
     <div class="hero-body">
@@ -14,6 +16,7 @@
         </div>
     </div>
 </div>
+{{ end }}
 <div class="section">
     <div class="container max-800px">
         <div class="content">

@@ -48,7 +48,7 @@ main {
 }
 
 
-/* Further customization of Bulma CSS */
+/* Font customization of Bulma CSS */
 
 .title {
 font-family: 'Literata', serif;
@@ -60,4 +60,22 @@ font-family: 'Literata', serif;
 
 code {
 font-family: 'DM Mono', monospace;
+}
+
+/* Color customization of Bulma CSS */
+
+/*
+html {
+        background-color: #ededed;
+}
+*/
+
+
+.card {
+background-color: hsl(0, 0%, 97%);
+}
+
+
+.footer {
+background-color: hsl(0, 0%, 95%);
 }
