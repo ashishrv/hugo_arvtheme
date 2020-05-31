@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="container">
+    <div class="section">
+        <div class="content">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+        <div class="columns is-mobile is-multiline is-capitalized">
+            <div class="column is-three-quarters">
+                <p></p>
+                <ul>
+                    {{ range .Data.Terms.ByCount }}
+                    {{ $pageCount := len .Pages }}
+                    {{ $pageTitle := .Page.Title }}
+                    <li><a href="{{ .Page.Permalink }}">{{ replace $pageTitle "-" " " }} </a> ({{ $pageCount }} post{{ if ne $pageCount 1 }}s{{ end }})</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
