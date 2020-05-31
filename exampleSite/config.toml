@@ -86,6 +86,10 @@ enableEmoji = true
   name = "About"
   url = "/about"
 
+[[menu.footer]]
+  name = "Credit"
+  url = "/credit"
+
 
 [related]
     threshold = 0
