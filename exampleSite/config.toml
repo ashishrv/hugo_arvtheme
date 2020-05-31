@@ -5,6 +5,7 @@ theme = "arvtheme"
 paginate = 4
 debug = 100000
 enableEmoji = true
+enableRobotsTXT = true
 
 [params]
     author = "Ashish R Vidyarthi"

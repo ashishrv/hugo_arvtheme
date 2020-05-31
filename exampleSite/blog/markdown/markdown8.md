@@ -1,7 +1,6 @@
 ---
 title: "Markdown Blocks"
 date: 2020-05-25T20:26:19-07:00
-draft: true
 Description: ""
 Tags: []
 Categories: []

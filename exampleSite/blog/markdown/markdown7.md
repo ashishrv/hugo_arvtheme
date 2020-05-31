@@ -1,7 +1,6 @@
 ---
 title: "Markdown Lists"
 date: 2020-05-25T20:24:23-07:00
-draft: true
 Description: ""
 Tags: []
 Categories: []

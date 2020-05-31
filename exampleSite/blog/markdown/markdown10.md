@@ -1,7 +1,6 @@
 ---
 title: "Markdown Nested Fences"
-date: 2020-05-25T20:32:29-07:00
-draft: true
+date: 2020-05-25T20:32:29-07:00s
 Description: ""
 Tags: []
 Categories: []

@@ -1,7 +1,6 @@
 ---
 title: "diagrams and flowcharts"
 date: 2020-05-25T21:59:10-07:00
-draft: true
 mermaid: true
 Description: ""
 Tags: []

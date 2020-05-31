@@ -17,7 +17,7 @@ herotext: Testing out hugo
 .main-image {
     background-position: center;
     background-size: cover;
-    background-image: url(/images/artem-sapegin-b18TRXc8UPQ-unsplash.jpg);
+    background-image: url(/images/heroimage.jpg);
 }
 </style>
 <section class="hero is-fullheight is-light main-image">

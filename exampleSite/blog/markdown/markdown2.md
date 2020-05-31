@@ -1,7 +1,6 @@
 ---
 title: "Markdown Block Elements"
 date: 2020-05-24T16:18:27-07:00
-draft: true
 Description: ""
 Tags: []
 Categories: ["markdown", "block-elements"]

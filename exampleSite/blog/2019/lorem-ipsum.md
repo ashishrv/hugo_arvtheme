@@ -2,7 +2,6 @@
 title: "This Post is Full of Lorem Ipsum"
 date: 2019-03-20T18:42:38+02:00
 description: "This is a short description of the page"
-draft: true
 images:
   - https://imgs.xkcd.com/comics/wrong_times_table.png
 categories:
