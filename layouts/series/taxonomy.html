@@ -10,13 +10,12 @@
             <div class="column is-three-quarters">
                 <p></p>
                 <ul>
-                {{ range .Paginator.Pages.ByPublishDate.Reverse }}
-                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
+                    {{ range .Pages.ByPublishDate }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
                 </ul>
             </div>
         </div>
-        {{ template "_internal/pagination.html" . }}
     </div>
 </div>
 {{ end }}

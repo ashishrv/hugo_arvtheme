@@ -11,7 +11,7 @@
                 <ul>
                     {{ range .Data.Terms.Alphabetical }}
                     {{ $pageCount := len .Pages }}
-                    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ $pageCount }} post{{ if ne $pageCount 1 }}s{{ end }}),
+                    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ $pageCount }}),
                     {{ end }}
                 </ul>
             </div>
