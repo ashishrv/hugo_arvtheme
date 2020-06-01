@@ -2,7 +2,7 @@
 title: "Markdown Inline"
 date: 2020-05-24T16:18:34-07:00
 Description: ""
-Tags: []
+Tags: ["markdown"]
 Categories: ["markdown", "custom-fence"]
 Series: ["test"]
 ---

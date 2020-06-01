@@ -2,7 +2,7 @@
 title: "Markdown Links"
 date: 2020-05-24T16:18:30-07:00
 Description: ""
-Tags: []
+Tags: ["markdown"]
 Categories: ["markdown", "code"]
 Series: ["test"]
 ---

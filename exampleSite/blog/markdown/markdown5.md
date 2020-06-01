@@ -2,7 +2,7 @@
 title: "Markdown Basics"
 date: 2020-05-24T16:18:37-07:00
 Description: ""
-Tags: []
+Tags: ["markdown"]
 Categories: ["markdown", "custom-fence"]
 Series: ["test"]
 ---

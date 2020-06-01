@@ -9,10 +9,9 @@
             <div class="column is-three-quarters">
                 <p></p>
                 <ul>
-                    {{ range .Data.Terms.ByCount }}
+                    {{ range .Data.Terms.Alphabetical }}
                     {{ $pageCount := len .Pages }}
-                    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ $pageCount }}
-                        post{{ if ne $pageCount 1 }}s{{ end }})</li>
+                    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ $pageCount }} post{{ if ne $pageCount 1 }}s{{ end }}),
                     {{ end }}
                 </ul>
             </div>

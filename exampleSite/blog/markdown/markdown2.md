@@ -2,7 +2,7 @@
 title: "Markdown Block Elements"
 date: 2020-05-24T16:18:27-07:00
 Description: ""
-Tags: []
+Tags: ["markdown"]
 Categories: ["markdown", "block-elements"]
 Series: []
 ---
