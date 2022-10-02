@@ -1,5 +1,8 @@
 <head>
 <meta charset="utf-8">
+{{ if .Site.Params.google-site-verification }}
+<meta name="google-site-verification" content="{{ .Site.Params.google-site-verification }}" />
+{{ end }}
 <meta http-equiv="Cache-Control" content="max-age=86400">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
