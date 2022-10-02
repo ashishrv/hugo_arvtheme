@@ -1,5 +1,6 @@
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="max-age=86400">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
 <link rel="canonical" href="{{ .Permalink }}" />
@@ -12,7 +13,7 @@
 <link rel="stylesheet" href="{{ absURL "css/arvstyles.css" }}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "css/arv.css" | relURL }}" />
-<script type=text/javascript src="{{ absURL "js/jquery.min.js" }}" crossorigin="anonymous"></script>
+<script defer type=text/javascript src="{{ absURL "js/jquery.min.js" }}" crossorigin="anonymous"></script>
 
 <!-- layouts/partial/externaljs/math.html -->
 {{ if or .Params.math .Site.Params.math }}
