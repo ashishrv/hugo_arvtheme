@@ -10,7 +10,7 @@
 {{ if and .Site.GoogleAnalytics  (not (in (string .Site.BaseURL) "localhost")) }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
-<title>{{ partial "data/title" . }}</title>
+<title>{{ .Title }}</title>
 <!-- <link rel="stylesheet" href="{{ absURL "css/bulma.min.css" }}"> -->
 <link rel="stylesheet" href="{{ absURL "css/arvstyles.css" }}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
